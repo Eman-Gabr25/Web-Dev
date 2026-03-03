@@ -57,13 +57,13 @@ button
     border-radius: 10px;
     border: none;
     color: white;
-    background-color: #751379;
+    background-color: #860f8a;
     cursor: pointer;
     transition: 0.5s;
 }
  button:hover
  {
-    background-color: #7a0000;
+    background-color: #900505;
     letter-spacing: 1px;
  }
  .btnSearch

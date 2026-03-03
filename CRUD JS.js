@@ -142,7 +142,7 @@ function showData()
 }
 showData()
  
-//delete
+//delete:
 
 function deleteData(i)
 {
@@ -151,7 +151,7 @@ function deleteData(i)
     showData();
 }
 
-//clear
+//delete all data:
 
 function deleteAll()
 {
@@ -160,7 +160,7 @@ function deleteAll()
     showData()
 }
 
-//update
+//update:
 
 function updateData(i)
 {
@@ -175,7 +175,8 @@ function updateData(i)
     submit.innerHTML='Update'
     mood='update'
     tmp = i
-    scroll({
+    scroll(
+        {
         top:0,
         behavior:"smooth"
 
@@ -184,7 +185,7 @@ function updateData(i)
 
 
 
-//search
+//search:
 
 let searchMood='title';
 let search = document.getElementById('search')
