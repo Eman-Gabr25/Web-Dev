@@ -1,0 +1,201 @@
+body {
+    font: 16px arial;
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+h1,
+h2 {
+    text-align: center
+}
+
+h2 {
+    color: firebrick;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 50px auto 0;
+    background-color: #fff;
+    box-shadow: 7px 7px 40px #000000a3;
+}
+
+.header {
+    text-align: center;
+    background-color: #1a80bc;
+    padding: 10px;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0;
+}
+
+.nav {
+    background-color: #bc1a3a;
+    margin-top: 10px;
+    margin-left: 250px;
+    border-radius: 16px;
+    direction: rtl;
+    width: 55%;
+}
+
+.nav ul {
+    font-size: 0;
+    padding: 0 10px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#main {
+    padding: 25px;
+    min-height: 400px;
+}
+
+.main h2 {
+    margin: 0 0 10px;
+}
+
+.main table th {
+    color: #fff;
+    background-color: #bc1a3a;
+
+}
+
+.main table,
+th {
+    width: 100%;
+    background-color: #1a80bc;
+    margin: 0 0 20px;
+    direction: rtl;
+    text-align: center;
+
+}
+
+.main table th {
+    width: 130px;
+}
+
+.main table td {
+    background-color: #fff;
+}
+
+.main table td a {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 3px 7px;
+    color: #fff;
+    background-color: #1a80bc;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.main table td a:nth-child(2) {
+    background-color: #bc1a3a;
+    margin: 0 0 0 5px;
+}
+
+.main .post-form {
+    width: 50%;
+    padding: 25px;
+    margin: 0 auto 10px;
+    background-color: #ff7878;
+    border-radius: 20px;
+    direction: rtl;
+    box-shadow: -2px -3px 22px #000;
+}
+
+.main .post-form .form-group {
+    margin: 0 0 15px;
+}
+
+.main .post-form .form-group label {
+    width: 30%;
+    display: inline-block;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.main .post-form .form-group input,
+.main .post-form .form-group select {
+    font-size: 16px;
+    width: 66%;
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+}
+
+
+.main .post-form .submit {
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 6px 66px;
+    color: #fff;
+    background-color: #1a80bc;
+    border: none;
+    border-radius: 5px;
+    margin: 0 37% 0 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.main .post-form .submit:nth-child(2) {
+    background-color: #bc1a3a;
+}
+
+
+.main .post-form .submit:hover {
+    box-shadow: 0 0 5px #555;
+}
+
+.main .pagination {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main .pagination li {
+    display: inline-block;
+}
+
+.main .pagination li a {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1abc9c;
+    display: block;
+    margin: 0 5px 0 0;
+    transition: all 0.3s;
+}
+
+.main .pagination li a:hover {
+    background-color: #333;
+}
