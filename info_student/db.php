@@ -1,15 +1,12 @@
 <?php
-
-$host = "localhost";       
-$username = "root";        
-$password = "";           
-$database = "student_db";  
+$host     = getenv('DB_HOST') ?: 'localhost';
+$username = getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASS') ?: '';   
+$database = 'student_db';
 
 $conn = mysqli_connect($host, $username, $password, $database);
 
-if (!$conn)
-     {
+if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-
 ?>

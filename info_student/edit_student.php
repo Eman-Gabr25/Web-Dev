@@ -19,7 +19,6 @@ $student = mysqli_fetch_assoc($result);
 
 $error = "";
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name    = trim($_POST['name']);
     $address = trim($_POST['address']);
@@ -106,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form method="POST">
             <div class="form-group">
                 <label>Full Name *</label>
-                <!-- value="..." fills the input with current data -->
+                
                 <input type="text" name="name" value="<?= htmlspecialchars($student['name']) ?>" required>
             </div>
 
