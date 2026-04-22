@@ -1,13 +1,9 @@
 <?php
-
 require_once 'db.php';
-
 $error = "";
 $success = "";
-
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
+   
     $username = trim($_POST['username']);
     $email    = trim($_POST['email']);
     $password = trim($_POST['password']);

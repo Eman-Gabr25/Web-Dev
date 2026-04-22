@@ -7,8 +7,6 @@ if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
 }
-
-
 $result = mysqli_query($conn, "SELECT * FROM students ORDER BY id ASC");
 ?>
 <!DOCTYPE html>
@@ -40,7 +38,6 @@ $result = mysqli_query($conn, "SELECT * FROM students ORDER BY id ASC");
         .nav-links a.danger { background: #e53935; }
         .nav-links a.danger:hover { background: #b71c1c; }
 
-        /* ---- Page Content ---- */
         .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
         
         .page-header {

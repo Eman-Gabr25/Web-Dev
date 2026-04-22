@@ -12,7 +12,7 @@ $id = $_GET['id'] ?? 0;
 
 $result = mysqli_query($conn, "SELECT * FROM students WHERE id='$id'");
 if (mysqli_num_rows($result) == 0) {
-    header("Location: home.php"); /
+    header("Location: home.php"); 
     exit();
 }
 $student = mysqli_fetch_assoc($result);

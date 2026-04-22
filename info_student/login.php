@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($username) || empty($password)) {
         $error = "Please fill in all fields!";
     } else {
-        // Find user in database
+       
         $sql = "SELECT * FROM users WHERE username='$username' OR email='$username'";
         $result = mysqli_query($conn, $sql);
         
@@ -91,12 +91,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 <div class="card">
     <h2>🎓 Student System</h2>
-    <p class="subtitle">Login to manage students</p>
+    <p class="subtitle">Login to management students</p>
 
-    <div class="demo">
-        <strong>Demo Login:</strong><br>
-        Username: <code>admin</code> | Password: <code>password</code>
-    </div>
+    
 
     <?php if ($error): ?><div class="error"><?= $error ?></div><?php endif; ?>
 

@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } elseif (!is_numeric($age) || $age < 1 || $age > 100) {
         $error = "Please enter a valid age!";
     } else {
-        // Insert into database
+      
         $sql = "INSERT INTO students (name, address, age, class, mobile) 
                 VALUES ('$name', '$address', '$age', '$class', '$mobile')";
         
